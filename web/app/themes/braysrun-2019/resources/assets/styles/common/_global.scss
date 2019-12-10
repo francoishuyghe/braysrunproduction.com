@@ -1,0 +1,45 @@
+html, body{
+    color: theme-color(black);
+    font-family: 'AkzidenzGroteskBQ-Light';
+    font-size: 18px;
+}
+
+a{
+    color: inherit;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &.button{
+        text-transform: uppercase;
+        display: inline-block;
+        border-bottom: 1px solid theme-color($black);
+        line-height: 1.1;
+    }
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4{
+    font-family: miller-display, serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2, .h2{
+    margin-bottom: $grid-gutter;
+}
+
+ul{
+    margin-left: $grid-gutter;
+
+    li{
+        margin-bottom: 20px;
+    }
+}
+
+//HTML5 VIDEOS
+video{
+    background: theme-color(grey);
+    width: 100%;
+}

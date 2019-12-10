@@ -1,0 +1,17 @@
+footer.content-info{
+    background: black;
+    color: theme-color(white);
+    text-align: center;
+    padding: $grid-gutter * 2 0;
+
+    .widget{
+        max-width: 800px;
+        margin: 0 auto;
+
+        &:first-child{
+            @extend .h4;
+            font-size: 1.2em;
+            margin-bottom: $grid-gutter;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.single{
+    #top{
+        margin-bottom: $grid-gutter;
+    }
+    .entry-content{
+        @extend .row;
+
+        p, h1, h2, h3, h4, h5, h6, ul{
+            @extend .col-md-8;
+        }
+
+        figure{
+            @extend .col-md-8;
+            margin: $grid-gutter 0;
+
+            &:nth-child(2n){
+                @extend .offset-md-4;
+            }
+        }
+    }
+}
