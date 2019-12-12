@@ -8,9 +8,14 @@ footer.content-info{
         max-width: 800px;
         margin: 0 auto;
 
+        p{
+            margin-bottom: 0;
+        }
+
         &:first-child{
             @extend .h4;
             font-size: 1.2em;
+            line-height: 1.5em;
             margin-bottom: $grid-gutter;
         }
     }

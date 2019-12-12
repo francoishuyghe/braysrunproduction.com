@@ -1,8 +1,6 @@
 <article {{ post_class() }} >
 <section id="top">
-  <video poster="" autoplay>
-      <source src="" type="video/mp4" />
-  </video>
+    @include('partials.video')
 </section>
 
   <header>

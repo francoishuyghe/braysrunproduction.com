@@ -15,20 +15,38 @@
 
 // HOME
 .home{
-    #top{
-    }
-
     #intro{
         text-align: center;
     }
 
     #projects{
+        margin-top: 300px;
+
         .project{
             background-color: theme-color(black);
             color: theme-color(pink);
             text-align: center;
-            padding: 0 $grid-gutter $grid-gutter;
-            margin-top: 20%;
+            padding: 0 $grid-gutter 300px;
+            margin-top: 200px;
+            margin-bottom: -200px;
+
+            h5{
+                color: theme-color(white);
+            }
+
+            h2{
+                margin-bottom: 0;
+            }
+
+            .button{
+                margin-top: $grid-gutter / 2;
+                color: theme-color(white);
+                border-color: theme-color(white);
+
+                &:hover{
+                    border-color: theme-color(pink);
+                }
+            }
 
             &:nth-child(2n){
                 background-color: theme-color(grey);
@@ -36,6 +54,22 @@
 
                 header{
                     color: theme-color(white);
+                }
+
+                .text{
+                    h5{
+                        color: theme-color(black);
+                    }
+        
+                    .button{
+                        color: theme-color(black);
+                        border-color: theme-color(black);
+
+
+                        &:hover{
+                            border-color: theme-color(pink);
+                        }
+                    }
                 }
             }
 
@@ -59,6 +93,14 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                 }
+            }
+
+            .text{
+                margin: $grid-gutter * 2 0;
+            }
+
+            .images{
+                margin: $grid-gutter * 2 0;
             }
         }
     }
