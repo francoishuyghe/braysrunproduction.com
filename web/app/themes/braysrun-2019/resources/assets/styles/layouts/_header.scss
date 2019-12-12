@@ -12,6 +12,12 @@
   .brand{
     img{
       max-height: $grid-gutter;
+
+      &.circle{
+        max-height: 200px;
+        display: none;
+        margin: 0 auto 10px;
+      }
     }
   }
 }

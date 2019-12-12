@@ -1,7 +1,8 @@
 <header class="banner text-center">
   <div class="container">
     <a class="brand" href="{{ home_url('/') }}">
-      <img src="@asset('images/BraysRunProductions-Logo-text.png')"/>
+      <img class="circle" src="@asset('images/BraysRunProductions-Logo-circle.png')"/>
+      <img class="text" src="@asset('images/BraysRunProductions-Logo-text.png')"/>
     </a>
     <nav class="nav-primary">
       @if (has_nav_menu('primary_navigation'))

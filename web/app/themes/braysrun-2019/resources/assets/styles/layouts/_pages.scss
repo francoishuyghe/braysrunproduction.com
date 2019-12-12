@@ -15,6 +15,20 @@
 
 // HOME
 .home{
+
+    .banner{
+        position: relative;
+        margin-bottom: -150px;
+
+        img.circle{
+            display: block;
+        }
+
+        .text{
+            display: none;
+        }
+    }
+
     #intro{
         text-align: center;
     }
