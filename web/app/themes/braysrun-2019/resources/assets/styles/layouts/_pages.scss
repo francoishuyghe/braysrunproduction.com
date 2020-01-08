@@ -24,12 +24,6 @@
             display: block;
         }
 
-        @include media-breakpoint-up(md){
-            .text{
-                display: none;
-            }
-        }
-
         @include media-breakpoint-down(sm){
             img.circle{
                 max-height: 100px;
@@ -59,6 +53,10 @@
         text-align: center;
     }
 
+    .h1{
+        line-height: 1.3em;
+    }
+
     @include media-breakpoint-down(sm){
         .h1{
             font-size: 1.2em;
@@ -76,9 +74,8 @@
             background-color: theme-color(black);
             color: theme-color(pink);
             text-align: center;
-            padding: 0 $grid-gutter 300px;
-            margin-top: 200px;
-            margin-bottom: -200px;
+            padding: 0 $grid-gutter 100px;
+            margin: 200px 0 300px;
 
             h5{
                 color: theme-color(white);
@@ -150,7 +147,15 @@
             }
 
             .images{
-                margin: $grid-gutter * 2 0;
+                margin-top: $grid-gutter * 2;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            &:last-child{
+                margin-bottom: 0;
             }
 
             @include media-breakpoint-down(sm){
