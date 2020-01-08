@@ -2,7 +2,7 @@
     <div class="container">
         @include('partials.video')
         <div class="text h1">
-            Intro text
+            {{ $data['intro_text'] }}
         </div>
     </div>
 </section>
