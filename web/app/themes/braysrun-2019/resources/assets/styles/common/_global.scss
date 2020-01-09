@@ -17,6 +17,10 @@ a{
         border-bottom: 1px solid theme-color($black);
         line-height: 1.1;
         font-size: 1.2em;
+
+        @include media-breakpoint-down(sm){
+            font-size: 1em;
+        }
     }
 }
 

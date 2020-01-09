@@ -1,5 +1,5 @@
 <div class="video-wrap">
-        <video poster="{{ $video['poster'] }}" autoplay loop>
+        <video poster="{{ $video['poster'] }}" autoplay loop muted>
                 <source src="{{ $video['video_mp4'] }}" type="video/mp4" />
                 <source src="{{ $video['video_webm'] }}" type="video/webm" />
                 <source src="{{ $video['video_ogv'] }}" type="video/ogv" />
