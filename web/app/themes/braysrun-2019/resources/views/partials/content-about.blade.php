@@ -16,15 +16,22 @@
 <section id="team">
         <div class="container">
     @if($data['team'])
-        <div class="row">
             @foreach ($data['team'] as $teammember)
-            <div class="team-member col-md-4 text-center">
-                <img src="{{ $teammember['photo']['sizes']['medium'] }}"/>
+            <div class="team-member">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ $teammember['photo']['sizes']['medium'] }}"/>
+                    </div>
+                    <div class="col-md-8">
                 <h3>{{ $teammember['name'] }}</h3>
-                <h6>{{ $teammember['title'] }}</h6>
+                @if($teammember['title'])
+                    <h6>{{ $teammember['title'] }}</h6>
+                @endif
+                {!! $teammember['bio'] !!}
+                    </div>
+                </div>
             </div>
             @endforeach
-        </div>
     @endif
     </div>
 </section>

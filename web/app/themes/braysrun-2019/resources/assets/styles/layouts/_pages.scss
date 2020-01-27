@@ -217,12 +217,19 @@
 
     #team{
         .team-member{
-            img{
-                margin-bottom: 10px;
-            }
+            margin-bottom: $grid-gutter;
 
             @include media-breakpoint-down(sm){
                 margin-bottom: $grid-gutter;
+                text-align: center;
+
+                p{
+                    text-align: left;
+                }
+
+                img{
+                    margin-bottom: 10px;
+                }
             }
         }
     }
