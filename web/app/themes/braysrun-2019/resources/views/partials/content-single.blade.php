@@ -10,6 +10,13 @@
     @php the_content() @endphp
   </div>
   <footer>
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+    <div class="row">
+      <div class="col-6">
+        @php next_post_link( '%link', '<i class="fal fa-arrow-left"></i> Previous Episode' ) @endphp
+      </div>
+      <div class="col-6 next">
+        @php previous_post_link( '%link', 'Next Episode <i class="fal fa-arrow-right"></i>' ) @endphp
+      </div>
+    </div>
   </footer>
 </article>

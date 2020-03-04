@@ -24,9 +24,11 @@
           $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
         @endphp
 
-        <div class="trailer-btn"><i class="fal fa-play-circle"></i></div>
+        <div class="trailer-btn"><i class="fal fa-play"></i></div>
         <div class="trailer-player">
-                <div class="trailer-wrap">{!! $iframe !!}</div>
+                <div class="trailer-wrap">
+                        <div class="player-wrap">{!! $iframe !!}</div>
+                </div>
         </div>
         @endif
 </div>
