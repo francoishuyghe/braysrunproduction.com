@@ -12,10 +12,10 @@
   <footer>
     <div class="row">
       <div class="col-6">
-        @php next_post_link( '%link', '<i class="fal fa-arrow-left"></i> Previous Episode' ) @endphp
+        @php next_post_link( '%link', '<i class="fal fa-arrow-left"></i> Previous Project' ) @endphp
       </div>
       <div class="col-6 next">
-        @php previous_post_link( '%link', 'Next Episode <i class="fal fa-arrow-right"></i>' ) @endphp
+        @php previous_post_link( '%link', 'Next Project <i class="fal fa-arrow-right"></i>' ) @endphp
       </div>
     </div>
   </footer>
