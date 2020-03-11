@@ -27,7 +27,7 @@
             </header>
 
             <div class="text">
-                <h5>Discover {{ $project->post_title }}</h5>
+                {{-- <h5>Discover {{ $project->post_title }}</h5> --}}
                 <p class="h1">{{ the_field('blurb', $project->ID) }}</p>
                 <a class="button" href="{{ the_permalink($project->ID) }}">See Project</a>
             </div>

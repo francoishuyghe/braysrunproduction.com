@@ -157,7 +157,7 @@
             }
 
             .text{
-                margin: $grid-gutter * 2 0;
+                margin: $grid-gutter 0 $grid-gutter * 2;
             }
 
             .images{
